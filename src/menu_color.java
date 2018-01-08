@@ -20,17 +20,6 @@ public class menu_color extends JPanel {
         this.add(new color_btn(0));
         this.add(new color_btn(1));
         this.add(new color_btn(2));
-	/*
-		plant1 = new JLabel("plant_1");
-		plant1.setPreferredSize(new Dimension(this.BAR_WIDTH/6,BAR_HEIGHT));
-		plant2 = new JLabel("plant_2");
-		plant2.setPreferredSize(new Dimension(this.BAR_WIDTH/6,BAR_HEIGHT));
-		plant3 = new JLabel("plant_3");
-		plant3.setPreferredSize(new Dimension(this.BAR_WIDTH/6,BAR_HEIGHT));
-		this.add(plant1);
-		this.add(plant2);BorderLayout
-		this.add(plant3);
-	*/
     }
 }
 

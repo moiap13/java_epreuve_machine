@@ -8,17 +8,20 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
+import java.util.ArrayList;
 
 public class draw_zone extends JPanel implements MouseListener {
     public static int btn_ind;
     public static int color_ind;
     public static Color figure_color;
+    public static ArrayList<interface_forme> array_formes;
 
     public draw_zone()
     {
         this.setPreferredSize(new Dimension(800,400));
         this.setBackground(new Color(0,0,0,70));
         this.addMouseListener(this);
+        this.array_formes = new ArrayList<interface_forme>();
     }
 
     public void test(interface_forme id)
@@ -34,6 +37,8 @@ public class draw_zone extends JPanel implements MouseListener {
 
         System.out.println(btn_ind);
         interface_forme f;
+
+       // System.out.println("NOMBRE Delement " + this.);
 
         switch (btn_ind){
             case 0:
@@ -67,7 +72,7 @@ public class draw_zone extends JPanel implements MouseListener {
                 break;
         }
 
-
+        this.array_formes.add(f);
         this.test(f);
     }
 

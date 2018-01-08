@@ -3,6 +3,18 @@
     Version : 1.0
     Date    : 8 Janvier 2018
  */
+
+
+
+/*
+
+    Fonctionnement du proramme :
+
+    il y a deux menus, ce sont des JPanel, un qui contient le trois boutons des figures et le second qui contien les couleurs.
+    chaques bouton a un id de 0 a 2 et cet id definit que type de figure c'est.
+
+
+ */
 import javax.swing.JFrame;
 import java.awt.*;
 
@@ -21,5 +33,6 @@ public class main {
         f.setResizable(false);
         f.setVisible(true);
         f.pack();
+        count_objects c = new count_objects();
     }
 }
