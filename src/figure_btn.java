@@ -1,12 +1,16 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 
-public class figure_btn extends JButton {
+public class figure_btn extends JButton implements MouseListener {
 
     public figure_btn(int ind)
     {
         btn_indice = ind;
         this.setPreferredSize(new Dimension(menu_fig.BTN_WIDTH, menu_fig.BAR_HEIGHT));
+        this.addMouseListener(this);
 
         switch (ind)
         {
@@ -23,4 +27,30 @@ public class figure_btn extends JButton {
     }
 
     private int btn_indice;
+
+    @Override
+    public void mouseClicked(MouseEvent mouseEvent) {
+        draw_zone.btn_ind = btn_indice;
+        System.out.println("Ta soeur");
+    }
+
+    @Override
+    public void mousePressed(MouseEvent mouseEvent) {
+
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent mouseEvent) {
+
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent mouseEvent) {
+
+    }
+
+    @Override
+    public void mouseExited(MouseEvent mouseEvent) {
+
+    }
 }
