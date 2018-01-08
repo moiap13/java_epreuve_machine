@@ -1,6 +1,10 @@
+/*
+    Author  : Pisanello Antonio
+    Version : 1.0
+    Date    : 8 Janvier 2018
+ */
 
 import java.awt.*;
-
 import javax.swing.*;
 
 public class menu_color extends JPanel {

@@ -1,3 +1,8 @@
+/*
+    Author  : Pisanello Antonio
+    Version : 1.0
+    Date    : 8 Janvier 2018
+ */
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
