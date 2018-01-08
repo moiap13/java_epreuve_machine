@@ -17,7 +17,7 @@ public class main {
         f.setSize(800, 600);
         //f.setContentPane(monGraphe);
         f.setLocationRelativeTo(null); //Fenetre au centre de l'écran
-        f.setAlwaysOnTop(true);
+        f.setAlwaysOnTop(false);
         f.setResizable(false);
         f.setVisible(true);
         f.pack();

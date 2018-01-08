@@ -11,6 +11,8 @@ import java.awt.event.MouseMotionListener;
 
 public class draw_zone extends JPanel implements MouseListener {
     public static int btn_ind;
+    public static int color_ind;
+    public static Color figure_color;
 
     public draw_zone()
     {
@@ -21,6 +23,7 @@ public class draw_zone extends JPanel implements MouseListener {
 
     public void test(interface_forme id)
     {
+        this.getGraphics().setColor(figure_color);
         id.dessiner(this.getGraphics());
     }
 
@@ -44,6 +47,23 @@ public class draw_zone extends JPanel implements MouseListener {
                 break;
             default:
                 f = null;
+                break;
+        }
+
+        System.out.println("Color ind : " + color_ind);
+
+        switch (color_ind){
+            case 0:
+                figure_color = new Color(255,255,0);
+                break;
+            case 1:
+                figure_color = new Color(255,0,0);
+                break;
+            case 2:
+                figure_color = new Color(0,0,255);
+                break;
+            default:
+                figure_color = Color.BLACK;
                 break;
         }
 

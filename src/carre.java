@@ -16,6 +16,8 @@ public class carre implements interface_forme{
 
     @Override
     public void dessiner(Graphics g) {
+
+        g.setColor(draw_zone.figure_color);
         Rectangle r = new Rectangle(xPos,yPos,BORDER_SIZE,BORDER_SIZE);
         g.drawRect((int)r.getX(), (int)r.getY(), (int)r.getWidth(), (int)r.getHeight());
     }

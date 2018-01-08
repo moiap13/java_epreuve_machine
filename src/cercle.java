@@ -16,6 +16,7 @@ public class cercle implements interface_forme{
 
     @Override
     public void dessiner(Graphics g) {
+        g.setColor(draw_zone.figure_color);
         g.drawOval(xPos, yPos, RAYON, RAYON);
     }
 

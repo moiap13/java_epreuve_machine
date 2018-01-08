@@ -36,7 +36,6 @@ public class figure_btn extends JButton implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent mouseEvent) {
         draw_zone.btn_ind = btn_indice;
-        System.out.println("Ta soeur");
     }
 
     @Override
